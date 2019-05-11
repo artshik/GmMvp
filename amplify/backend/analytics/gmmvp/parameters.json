@@ -1,0 +1,20 @@
+{
+    "appName": "gmmvp",
+    "roleName": "pinpointLambdaRole6bbe7163",
+    "cloudWatchPolicyName": "cloudWatchPolicy6bbe7163",
+    "pinpointPolicyName": "pinpointPolicy6bbe7163",
+    "authPolicyName": "pinpoint_amplify_6bbe7163",
+    "unauthPolicyName": "pinpoint_amplify_6bbe7163",
+    "authRoleName": {
+        "Ref": "AuthRoleName"
+    },
+    "unauthRoleName": {
+        "Ref": "UnauthRoleName"
+    },
+    "authRoleArn": {
+        "Fn::GetAtt": [
+            "AuthRole",
+            "Arn"
+        ]
+    }
+}
